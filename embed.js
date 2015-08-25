@@ -15,6 +15,7 @@ function checkMobile() {
 //管理员判断开始
 function sskadmin(e) {
     var ssk = '';
+    console.log(e.user_id);
     if (e.user_id == 4743624) {
         if (checkMobile()) {
             ssk = '<span class="ua"><span class="sskadmin">R00T</span></span><br><br>';
