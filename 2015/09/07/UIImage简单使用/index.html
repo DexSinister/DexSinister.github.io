@@ -15,17 +15,18 @@
   })();
 </script>
   
-  <title>Tag: ios博客 | DexSinister Blog</title>
+  <title>UIImage简单使用 | DexSinister Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="How to use Hexo">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DexSinister Blog">
-<meta property="og:url" content="http://yoursite.com/tags/ios博客/index.html">
+  <meta name="description" content="123456//NSData转换为UIImageNSData *imageData = [NSData dataWithContentsOfFile: imagePath];UIImage *image = [UIImage imageWithData: imageData]**;//UIImage转换为NSData**NSData *imageData = UIImagePNGRepresent">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UIImage简单使用">
+<meta property="og:url" content="http://yoursite.com/2015/09/07/UIImage简单使用/index.html">
 <meta property="og:site_name" content="DexSinister Blog">
-<meta property="og:description" content="How to use Hexo">
+<meta property="og:description" content="123456//NSData转换为UIImageNSData *imageData = [NSData dataWithContentsOfFile: imagePath];UIImage *image = [UIImage imageWithData: imageData]**;//UIImage转换为NSData**NSData *imageData = UIImagePNGRepresent">
+<meta property="og:updated_time" content="2015-09-08T03:54:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DexSinister Blog">
-<meta name="twitter:description" content="How to use Hexo">
+<meta name="twitter:title" content="UIImage简单使用">
+<meta name="twitter:description" content="123456//NSData转换为UIImageNSData *imageData = [NSData dataWithContentsOfFile: imagePath];UIImage *image = [UIImage imageWithData: imageData]**;//UIImage转换为NSData**NSData *imageData = UIImagePNGRepresent">
   
     <link rel="alternative" href="/atom.xml" title="DexSinister Blog" type="application/atom+xml">
   
@@ -92,39 +93,91 @@ ga('send', 'pageview');
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/08/28/IOSFamousBlog/" class="archive-article-date">
-  <time datetime="2015-08-28T03:16:15.000Z" itemprop="datePublished">8月 28</time>
+      <section id="main"><article id="post-UIImage简单使用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/09/07/UIImage简单使用/" class="article-date">
+  <time datetime="2015-09-07T03:50:07.000Z" itemprop="datePublished">2015-09-07</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/28/IOSFamousBlog/">IOSFamousBlog</a>
+    <h1 class="article-title" itemprop="name">
+      UIImage简单使用
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//NSData转换为UIImage</span><br><span class="line">NSData *imageData = [NSData dataWithContentsOfFile: imagePath];</span><br><span class="line">UIImage *image = [UIImage imageWithData: imageData]**;</span><br><span class="line"></span><br><span class="line">//UIImage转换为NSData</span><br><span class="line">**NSData *imageData = UIImagePNGRepresentation(aimae);</span><br></pre></td></tr></table></figure>
+<p>IOS中对图片的处理 UIImage<br>相信做项目时肯定会有用到 UIImage 这个类，那我们就来看一下这个类中都有什么内容。<br>其实这篇文章就是在看文档的时候想记录一下文档中得方法。<br>UIImage 继承于NSObject<br>下面介绍一下UIImage中的方法<br>首先是我们最常用的</p>
+<p>通过图片的文件名来获取这个图片<br><strong>+ (UIImage <em>)imageNamed:(NSString </em>)name</strong><br>//要注意的是这个方法适用于已经导入到工程中的图片</p>
+<p>创建新图片</p>
+<p><strong>1、+ (UIImage <em>)imageWithContentsOfFile:(NSString </em>)path</strong><br>//通过文件加载指定路径下的文件内容获得新图片</p>
+<p><strong>2、+ (UIImage <em>)imageWithData:(NSData </em>)data</strong><br>//通过一个NSData对象来获得图片<br><strong>3、+ (UIImage <em>)imageWithData:(NSData </em>)data scale:(CGFloat)scale</strong><br>//同上，只是再加上一个图片大小比例，用来改变图片的大小</p>
+<p><strong>4、+ (UIImage *)imageWithCGImage:(CGImageRef)cgImage</strong><br>//使用Quartz 2D对象创建UIImage<br><strong>5、+ (UIImage *)imageWithCGImage:(CGImageRef)imageRef scale:(CGFloat)scale orientation:(UIImageOrientation)orientation</strong><br>//制定图片的比例和方向，其中方向是个枚举类。</p>
+<p><strong>6、+ (UIImage <em>)imageWithCIImage:(CIImage </em>)ciImage</strong><br>//用一个Core Image 对象创建图像<br><strong>7、+ (UIImage <em>)imageWithCIImage:(CIImage </em>)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation</strong><br>//再加上比例和图片方向</p>
+<p><strong>8、- (UIImage *)imageWithAlignmentRectInsets:(UIEdgeInsets)alignmentInsets</strong><br>//返回指定矩形区域内的图像</p>
+<p><strong>9、+ (UIImage <em>)animatedImageNamed:(NSString </em>)name duration:(NSTimeInterval)duration</strong><br>//创建一个动态图片，动态图片持续的时间为duration<br><strong>10、+ (UIImage <em>)animatedImageWithImages:(NSArray </em>)images duration:(NSTimeInterval)duration</strong><br>//用一组图片创建一个动态图片，动态持续时间duration</p>
+<p><strong>11、+ (UIImage <em>)animatedResizableImageNamed:(NSString </em>)name capInsets:(UIEdgeInsets)capInsets duration:(NSTimeInterval)duration</strong><br>//创建一个在可变大小的图片上指定矩形区域内的动态图片<br><strong>12、+ (UIImage <em>)animatedResizableImageNamed:(NSString </em>)name capInsets:(UIEdgeInsets)capInsets resizingMode:(UIImageResizingMode)resizingMode duration:(NSTimeInterval)duration</strong><br>//同上，只是多了一个图片变化的方式，具体来说就是平铺或者拉伸</p>
+<p><strong>13、- (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets</strong><br>//用制定矩形区域创建图像<br><strong>14、- (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets resizingMode:(UIImageResizingMode)resizingMode</strong><br>//同上，指定图片变化方式</p>
+<p>初始化图片</p>
+<p>方法的作用在从上面的一些方法中都能找到原型，这里就不一一注释了<br><strong>1、– initWithContentsOfFile: //从文件加载图片<br>2、– initWithData: //用NSData对象初始化图片<br>3、– initWithData:scale: //用NSData对象,指定的比例，初始化图片<br>4、– initWithCGImage:<br>5、– initWithCGImage:scale:orientation:<br>6、– initWithCIImage:<br>7、– initWithCIImage:scale:orientation:</strong></p>
+<p>绘画图片</p>
+<p><strong>1、– drawAtPoint:</strong><br>//在指定的点开始绘画图片，这个点就是图片的做上角顶点<br><strong>2、- (void)drawAtPoint:(CGPoint)point blendMode:(CGBlendMode)blendMode alpha:(CGFloat)alpha</strong><br>//在指定的点绘制整个图片，并使用自定义图片复合模式，并设置透明度</p>
+<p><strong>3、– drawInRect:</strong><br>//在指定区域内绘制图片，可根据需要缩放图片<br><strong>4、– drawInRect:blendMode:alpha:</strong><br>//参照上面第二条<br><strong>5、– drawAsPatternInRect:</strong><br>//在指定区域内，平铺图片</p>
+<p>image的属性<br>imageOrientation //图片的方向<br>size //图片的大小size<br>scale //图片的比例<br>resizingMode //图片变化方式<br>CGImage //潜在的Quartz image<br>CIImage //潜在的Core Image<br>images //返回一个由图片组成的数组，针对于由一组图片生成的动态图片<br>duration //返回动态图片持续的时间（即动态图片播放一遍的时间）<br>capInsets //图片上选定的区域<br>alignmentRectInsets //图片平铺的区域</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2015/09/07/UIImage简单使用/" data-id="cieatpykd0000guf8dwfxghlt" class="article-share-link" data-share="baidu" data-title="UIImage简单使用">分享到</a>
+      
+
+      
+        <a href="http://yoursite.com/2015/09/07/UIImage简单使用/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IOS开发/">IOS开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UIImage/">UIImage</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/09/08/NSDate简单使用/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          NSDate简单使用
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/09/02/StoryBoard简单使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">StoryBoard简单使用</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/09/07/UIImage简单使用/" data-title="UIImage简单使用" data-url="http://yoursite.com/2015/09/07/UIImage简单使用/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">

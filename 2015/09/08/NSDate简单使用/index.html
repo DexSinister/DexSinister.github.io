@@ -15,17 +15,21 @@
   })();
 </script>
   
-  <title>Tag: ios博客 | DexSinister Blog</title>
+  <title>NSDate简单使用 | DexSinister Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="How to use Hexo">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DexSinister Blog">
-<meta property="og:url" content="http://yoursite.com/tags/ios博客/index.html">
+  <meta name="description" content="// 获取系统当前时间  dasdasdNSDate  date = [NSDate date];NSTimeInterval sec = [date timeIntervalSinceNow];NSDate  currentDate = [[NSDate alloc] initWithTimeIntervalSinceNow:sec];  
+//设置时间输出格式：NSDateFormatter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NSDate简单使用">
+<meta property="og:url" content="http://yoursite.com/2015/09/08/NSDate简单使用/index.html">
 <meta property="og:site_name" content="DexSinister Blog">
-<meta property="og:description" content="How to use Hexo">
+<meta property="og:description" content="// 获取系统当前时间  dasdasdNSDate  date = [NSDate date];NSTimeInterval sec = [date timeIntervalSinceNow];NSDate  currentDate = [[NSDate alloc] initWithTimeIntervalSinceNow:sec];  
+//设置时间输出格式：NSDateFormatter">
+<meta property="og:updated_time" content="2015-09-08T03:53:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DexSinister Blog">
-<meta name="twitter:description" content="How to use Hexo">
+<meta name="twitter:title" content="NSDate简单使用">
+<meta name="twitter:description" content="// 获取系统当前时间  dasdasdNSDate  date = [NSDate date];NSTimeInterval sec = [date timeIntervalSinceNow];NSDate  currentDate = [[NSDate alloc] initWithTimeIntervalSinceNow:sec];  
+//设置时间输出格式：NSDateFormatter">
   
     <link rel="alternative" href="/atom.xml" title="DexSinister Blog" type="application/atom+xml">
   
@@ -92,39 +96,67 @@ ga('send', 'pageview');
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/08/28/IOSFamousBlog/" class="archive-article-date">
-  <time datetime="2015-08-28T03:16:15.000Z" itemprop="datePublished">8月 28</time>
+      <section id="main"><article id="post-NSDate简单使用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/09/08/NSDate简单使用/" class="article-date">
+  <time datetime="2015-09-08T03:50:07.000Z" itemprop="datePublished">2015-09-08</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/28/IOSFamousBlog/">IOSFamousBlog</a>
+    <h1 class="article-title" itemprop="name">
+      NSDate简单使用
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>// 获取系统当前时间  dasdasd<br>NSDate <em> date = [NSDate date];<br>NSTimeInterval sec = [date timeIntervalSinceNow];<br>NSDate </em> currentDate = [[NSDate alloc] initWithTimeIntervalSinceNow:sec];  </p>
+<p>//设置时间输出格式：<br>NSDateFormatter <em> df = [[NSDateFormatter alloc] init ];<br>[df setDateFormat:@”yyyy年MM月dd日 HH小时mm分ss秒”];<br>NSString </em> na = [df stringFromDate:currentDate];  </p>
+<p>NSLog(@”系统当前时间为：%@”,na);  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2015/09/08/NSDate简单使用/" data-id="cieatmwr1000wgjf8jt7y6sni" class="article-share-link" data-share="baidu" data-title="NSDate简单使用">分享到</a>
+      
+
+      
+        <a href="http://yoursite.com/2015/09/08/NSDate简单使用/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IOS开发/">IOS开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NSDate/">NSDate</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/09/07/UIImage简单使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">UIImage简单使用</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/09/08/NSDate简单使用/" data-title="NSDate简单使用" data-url="http://yoursite.com/2015/09/08/NSDate简单使用/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">
