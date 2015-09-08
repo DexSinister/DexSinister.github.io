@@ -15,24 +15,23 @@
   })();
 </script>
   
-    <title>StoryBoard简单使用 | DexSinister Blog</title>
+    <title>UIImage简单使用 | DexSinister Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="DexSinister">
     
 
     
-    <meta name="description" content="12KMMovieDetailsViewController* viewController = (KMMovieDetailsViewController*)[StoryBoardUtilities viewControllerForStoryboardName:@&quot;KMMovieDetailsStoryboard&quot; class:[KMMovieDetailsViewController cla">
+    <meta name="description" content="123456//NSData转换为UIImageNSData *imageData = [NSData dataWithContentsOfFile: imagePath];UIImage *image = [UIImage imageWithData: imageData]**;//UIImage转换为NSData**NSData *imageData = UIImagePNGRepresent">
 <meta property="og:type" content="article">
-<meta property="og:title" content="StoryBoard简单使用">
-<meta property="og:url" content="http://yoursite.com/2015/09/01/StoryBoard/index.html">
+<meta property="og:title" content="UIImage简单使用">
+<meta property="og:url" content="http://yoursite.com/2015/09/06/UIImage/index.html">
 <meta property="og:site_name" content="DexSinister Blog">
-<meta property="og:description" content="12KMMovieDetailsViewController* viewController = (KMMovieDetailsViewController*)[StoryBoardUtilities viewControllerForStoryboardName:@&quot;KMMovieDetailsStoryboard&quot; class:[KMMovieDetailsViewController cla">
-<meta property="og:image" content="http://yoursite.com/MyImage/StoryBoard/StoryBoard.png">
-<meta property="og:updated_time" content="2015-09-01T01:59:34.000Z">
+<meta property="og:description" content="123456//NSData转换为UIImageNSData *imageData = [NSData dataWithContentsOfFile: imagePath];UIImage *image = [UIImage imageWithData: imageData]**;//UIImage转换为NSData**NSData *imageData = UIImagePNGRepresent">
+<meta property="og:updated_time" content="2015-09-06T02:16:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="StoryBoard简单使用">
-<meta name="twitter:description" content="12KMMovieDetailsViewController* viewController = (KMMovieDetailsViewController*)[StoryBoardUtilities viewControllerForStoryboardName:@&quot;KMMovieDetailsStoryboard&quot; class:[KMMovieDetailsViewController cla">
+<meta name="twitter:title" content="UIImage简单使用">
+<meta name="twitter:description" content="123456//NSData转换为UIImageNSData *imageData = [NSData dataWithContentsOfFile: imagePath];UIImage *image = [UIImage imageWithData: imageData]**;//UIImage转换为NSData**NSData *imageData = UIImagePNGRepresent">
 
     
     <link rel="alternative" href="/atom.xml" title="DexSinister Blog" type="application/atom+xml">
@@ -92,14 +91,14 @@
 		<header class="article-info clearfix"> 
  <h1 itemprop="name">
     
-      <a href="/2015/09/01/StoryBoard/" title="StoryBoard简单使用" itemprop="url">StoryBoard简单使用</a>
+      <a href="/2015/09/06/UIImage/" title="UIImage简单使用" itemprop="url">UIImage简单使用</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="DexSinister" target="_blank" itemprop="author">DexSinister</a>
 		
   <p class="article-time">
-    <time datetime="2015-09-01T01:59:42.000Z" itemprop="datePublished"> 发表于 2015-09-01</time>
+    <time datetime="2015-09-06T02:16:12.000Z" itemprop="datePublished"> 发表于 2015-09-06</time>
     
   </p>
 </header>
@@ -109,13 +108,29 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#源代码_(/CodeSource/StoryBoard/StoryBoardUtilities-h)"><span class="toc-number">1.</span> <span class="toc-text">源代码 (/CodeSource/StoryBoard/StoryBoardUtilities.h)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#源代码_(/CodeSource/StoryBoard/StoryBoardUtilities-m)"><span class="toc-number">2.</span> <span class="toc-text">源代码 (/CodeSource/StoryBoard/StoryBoardUtilities.m)</span></a></li></ol>
+			
 		
 		</div>
 		
-		<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">KMMovieDetailsViewController* viewController </span><br><span class="line">= (KMMovieDetailsViewController*)[StoryBoardUtilities viewControllerForStoryboardName:@<span class="string">"KMMovieDetailsStoryboard"</span> class:[KMMovieDetailsViewController class]];</span><br></pre></td></tr></table></figure>
-<p>界面配置<br><img src="/MyImage/StoryBoard/StoryBoard.png" alt="界面配置"></p>
-<h3 id="源代码_(/CodeSource/StoryBoard/StoryBoardUtilities-h)"><a href="/CodeSource/StoryBoard/StoryBoardUtilities.h">源代码</a> (/CodeSource/StoryBoard/StoryBoardUtilities.h)</h3><h3 id="源代码_(/CodeSource/StoryBoard/StoryBoardUtilities-m)"><a href="/CodeSource/StoryBoard/StoryBoardUtilities.m">源代码</a> (/CodeSource/StoryBoard/StoryBoardUtilities.m)</h3>  
+		<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//NSData转换为UIImage</span><br><span class="line">NSData *imageData = [NSData dataWithContentsOfFile: imagePath];</span><br><span class="line">UIImage *image = [UIImage imageWithData: imageData]**;</span><br><span class="line"></span><br><span class="line">//UIImage转换为NSData</span><br><span class="line">**NSData *imageData = UIImagePNGRepresentation(aimae);</span><br></pre></td></tr></table></figure>
+<p>IOS中对图片的处理 UIImage<br>相信做项目时肯定会有用到 UIImage 这个类，那我们就来看一下这个类中都有什么内容。<br>其实这篇文章就是在看文档的时候想记录一下文档中得方法。<br>UIImage 继承于NSObject<br>下面介绍一下UIImage中的方法<br>首先是我们最常用的</p>
+<p>通过图片的文件名来获取这个图片<br><strong>+ (UIImage <em>)imageNamed:(NSString </em>)name</strong><br>//要注意的是这个方法适用于已经导入到工程中的图片</p>
+<p>创建新图片</p>
+<p><strong>1、+ (UIImage <em>)imageWithContentsOfFile:(NSString </em>)path</strong><br>//通过文件加载指定路径下的文件内容获得新图片</p>
+<p><strong>2、+ (UIImage <em>)imageWithData:(NSData </em>)data</strong><br>//通过一个NSData对象来获得图片<br><strong>3、+ (UIImage <em>)imageWithData:(NSData </em>)data scale:(CGFloat)scale</strong><br>//同上，只是再加上一个图片大小比例，用来改变图片的大小</p>
+<p><strong>4、+ (UIImage *)imageWithCGImage:(CGImageRef)cgImage</strong><br>//使用Quartz 2D对象创建UIImage<br><strong>5、+ (UIImage *)imageWithCGImage:(CGImageRef)imageRef scale:(CGFloat)scale orientation:(UIImageOrientation)orientation</strong><br>//制定图片的比例和方向，其中方向是个枚举类。</p>
+<p><strong>6、+ (UIImage <em>)imageWithCIImage:(CIImage </em>)ciImage</strong><br>//用一个Core Image 对象创建图像<br><strong>7、+ (UIImage <em>)imageWithCIImage:(CIImage </em>)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation</strong><br>//再加上比例和图片方向</p>
+<p><strong>8、- (UIImage *)imageWithAlignmentRectInsets:(UIEdgeInsets)alignmentInsets</strong><br>//返回指定矩形区域内的图像</p>
+<p><strong>9、+ (UIImage <em>)animatedImageNamed:(NSString </em>)name duration:(NSTimeInterval)duration</strong><br>//创建一个动态图片，动态图片持续的时间为duration<br><strong>10、+ (UIImage <em>)animatedImageWithImages:(NSArray </em>)images duration:(NSTimeInterval)duration</strong><br>//用一组图片创建一个动态图片，动态持续时间duration</p>
+<p><strong>11、+ (UIImage <em>)animatedResizableImageNamed:(NSString </em>)name capInsets:(UIEdgeInsets)capInsets duration:(NSTimeInterval)duration</strong><br>//创建一个在可变大小的图片上指定矩形区域内的动态图片<br><strong>12、+ (UIImage <em>)animatedResizableImageNamed:(NSString </em>)name capInsets:(UIEdgeInsets)capInsets resizingMode:(UIImageResizingMode)resizingMode duration:(NSTimeInterval)duration</strong><br>//同上，只是多了一个图片变化的方式，具体来说就是平铺或者拉伸</p>
+<p><strong>13、- (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets</strong><br>//用制定矩形区域创建图像<br><strong>14、- (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets resizingMode:(UIImageResizingMode)resizingMode</strong><br>//同上，指定图片变化方式</p>
+<p>初始化图片</p>
+<p>方法的作用在从上面的一些方法中都能找到原型，这里就不一一注释了<br><strong>1、– initWithContentsOfFile: //从文件加载图片<br>2、– initWithData: //用NSData对象初始化图片<br>3、– initWithData:scale: //用NSData对象,指定的比例，初始化图片<br>4、– initWithCGImage:<br>5、– initWithCGImage:scale:orientation:<br>6、– initWithCIImage:<br>7、– initWithCIImage:scale:orientation:</strong></p>
+<p>绘画图片</p>
+<p><strong>1、– drawAtPoint:</strong><br>//在指定的点开始绘画图片，这个点就是图片的做上角顶点<br><strong>2、- (void)drawAtPoint:(CGPoint)point blendMode:(CGBlendMode)blendMode alpha:(CGFloat)alpha</strong><br>//在指定的点绘制整个图片，并使用自定义图片复合模式，并设置透明度</p>
+<p><strong>3、– drawInRect:</strong><br>//在指定区域内绘制图片，可根据需要缩放图片<br><strong>4、– drawInRect:blendMode:alpha:</strong><br>//参照上面第二条<br><strong>5、– drawAsPatternInRect:</strong><br>//在指定区域内，平铺图片</p>
+<p>image的属性<br>imageOrientation //图片的方向<br>size //图片的大小size<br>scale //图片的比例<br>resizingMode //图片变化方式<br>CGImage //潜在的Quartz image<br>CIImage //潜在的Core Image<br>images //返回一个由图片组成的数组，针对于由一组图片生成的动态图片<br>duration //返回动态图片持续的时间（即动态图片播放一遍的时间）<br>capInsets //图片上选定的区域<br>alignmentRectInsets //图片平铺的区域</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -123,7 +138,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/IOS开发/">IOS开发</a><a href="/tags/StoryBoard/">StoryBoard</a>
+  <span></span> <a href="/tags/IOS开发/">IOS开发</a><a href="/tags/UIImage/">UIImage</a>
   </div>
 
 </div>
@@ -132,7 +147,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/09/01/StoryBoard/" data-title="StoryBoard简单使用 | DexSinister Blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/09/06/UIImage/" data-title="UIImage简单使用 | DexSinister Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -145,19 +160,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/09/06/UIImage/" title="UIImage简单使用">
-  <strong>上一篇：</strong><br/>
-  <span>
-  UIImage简单使用</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/08/31/AsyncSocket/"  title="AsyncSocket简单使用">
+<a href="/2015/09/01/StoryBoard/"  title="StoryBoard简单使用">
  <strong>下一篇：</strong><br/> 
- <span>AsyncSocket简单使用
+ <span>StoryBoard简单使用
 </span>
 </a>
 </div>
@@ -166,7 +173,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/09/01/StoryBoard/" data-title="StoryBoard简单使用" data-url="http://yoursite.com/2015/09/01/StoryBoard/"></div>
+	<div class="ds-thread" data-thread-key="2015/09/06/UIImage/" data-title="UIImage简单使用" data-url="http://yoursite.com/2015/09/06/UIImage/"></div>
 </section>
 
 
@@ -176,7 +183,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#源代码_(/CodeSource/StoryBoard/StoryBoardUtilities-h)"><span class="toc-number">1.</span> <span class="toc-text">源代码 (/CodeSource/StoryBoard/StoryBoardUtilities.h)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#源代码_(/CodeSource/StoryBoard/StoryBoardUtilities-m)"><span class="toc-number">2.</span> <span class="toc-text">源代码 (/CodeSource/StoryBoard/StoryBoardUtilities.m)</span></a></li></ol>
+ 
  
   </div>
 
